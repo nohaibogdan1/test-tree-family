@@ -40,7 +40,6 @@ initializeDb(db => {
       });
       return res.json(members);
     } catch (e) {
-      console.log(e);
 
       res.sendStatus(500);
     }
@@ -61,7 +60,6 @@ initializeDb(db => {
       });
       return res.json(member);
     } catch (e) {
-      console.log(e);
       res.sendStatus(500);
     }
   });
@@ -74,7 +72,6 @@ initializeDb(db => {
       });
       res.sendStatus(200);
     } catch (e) {
-      console.log(e);
 
       res.sendStatus(500);
     }
@@ -102,7 +99,6 @@ initializeDb(db => {
         res.sendStatus(404);
       }
     } catch (e) {
-      console.log(e);
 
       res.sendStatus(500);
     }
@@ -121,7 +117,6 @@ initializeDb(db => {
 
       res.sendStatus(200);
     } catch (e) {
-      console.log(e);
       res.sendStatus(500);
     }
   });
